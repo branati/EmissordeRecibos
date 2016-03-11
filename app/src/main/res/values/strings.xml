@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Emissor de Recibos</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_cadastrarrecibo">Cadastrar Recibo</string>
+    <string name="title_activity_config_con_impressora">Conexão Impressora</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="lbladdress" />
+    <string name="txtaddress">IP</string>
+    <string name="lblport" />
+    <string name="txtport">Porta</string>
+    <string name="btnconnect">Conectar</string>
+    <string name="btnclear">Limpar</string>
+    <string name="btntestar">Testar Conexão</string>
+    <string name="lnlnome" />
+    <string name="txtnome"></string>
+    <string name="lblnome">Nome Emissor</string>
+    <string name="txttelefone"></string>
+    <string name="lbltelefone">Telefone</string>
+    <string name="lblempresa">Empresa</string>
+    <string name="lblcontadorrecibos">Iniciar Recibos pelo Número</string>
+    <string name="lblcpfcnpj">CPF / CNPJ</string>
+    <string name="txtcpfcnpj" />
+    <string name="txtempresa" />
+    <string name="btnsalvarconfigimpressao">Salvar</string>
+    <string name="txtvalor">Valor</string>
+    <string name="txtselecionacliente">Selecionar o Cliente</string>
+    <string name="btnimprimirrecibo">Imprimir</string>
+    <string name="btnvisualizarimpressao">Visualizar Impressão</string>
+    <string name="btnsalvarrecibo">Salvar</string>
+    <string name="btnsalvarimprimirrecibo">Salvar e Imprimir</string>
+    <string name="btnabrir">Abrir</string>
+</resources>

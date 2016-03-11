@@ -1,0 +1,94 @@
+Index: app/src/test/java/br/com/rcmf/emissorderecibos/ExampleUnitTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/test/java/br/com/rcmf/emissorderecibos/ExampleUnitTest.java	(revision )
++++ app/src/test/java/br/com/rcmf/emissorderecibos/ExampleUnitTest.java	(revision )
+@@ -0,0 +1,15 @@
++package br.com.rcmf.emissorderecibos;
++
++import org.junit.Test;
++
++import static org.junit.Assert.*;
++
++/**
++ * To work on unit tests, switch the Test Artifact in the Build Variants view.
++ */
++public class ExampleUnitTest {
++    @Test
++    public void addition_isCorrect() throws Exception {
++        assertEquals(4, 2 + 2);
++    }
++}
+\ No newline at end of file
+Index: app/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/.gitignore	(revision )
++++ app/.gitignore	(revision )
+@@ -0,0 +1,1 @@
++/build
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision )
++++ app/build.gradle	(revision )
+@@ -0,0 +1,28 @@
++apply plugin: 'com.android.application'
++
++android {
++    compileSdkVersion 23
++    buildToolsVersion "23.0.2"
++
++    defaultConfig {
++        applicationId "br.com.rcmf.emissorderecibos"
++        minSdkVersion 15
++        targetSdkVersion 23
++        versionCode 1
++        versionName "1.0"
++    }
++    buildTypes {
++        release {
++            minifyEnabled false
++            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
++        }
++    }
++}
++
++dependencies {
++    compile fileTree(dir: 'libs', include: ['*.jar'])
++    testCompile 'junit:junit:4.12'
++    compile 'com.android.support:appcompat-v7:23.2.0'
++    compile 'com.android.support:design:23.2.0'
++    compile 'com.android.support:support-v4:23.2.0'
++}
+Index: app/proguard-rules.pro
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/proguard-rules.pro	(revision )
++++ app/proguard-rules.pro	(revision )
+@@ -0,0 +1,17 @@
++# Add project specific ProGuard rules here.
++# By default, the flags in this file are appended to flags specified
++# in /home/renato/Downloads/android-sdk-linux/tools/proguard/proguard-android.txt
++# You can edit the include path and order by changing the proguardFiles
++# directive in build.gradle.
++#
++# For more details, see
++#   http://developer.android.com/guide/developing/tools/proguard.html
++
++# Add any project specific keep options here:
++
++# If your project uses WebView with JS, uncomment the following
++# and specify the fully qualified class name to the JavaScript interface
++# class:
++#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
++#   public *;
++#}
